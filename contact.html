@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:cyan;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1, h2 {
+            margin-top: 40px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="container">
+        <h2>1. Email Address</h2>
+        <p><a href="mailto:info@example.com">barindersinghbatth@gmail.com</a></p>
+        
+        <h2>2. Mailing Address</h2>
+        <p>108 Bell Street, Red Deer, Alberta, Canada, T4R1M8</p>
+        
+        <h2>3. Phone Number</h2>
+        <p><a href="tel:+1234567890">4038727240</a></p>
+    
+        <button id="backButton">Back</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#backButton").click(function(){
+                window.location.href = "blog.html";
+            });
+        });
+    </script>
+</body>
+</html>
